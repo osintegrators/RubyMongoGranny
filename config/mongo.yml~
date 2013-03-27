@@ -4,15 +4,15 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: mongo_granny
+  database: ruby_mongo_granny
 
 test:
   <<: *defaults
-  database: mongo_granny
+  database: ruby_mongo_granny
 
 # set these environment variables on your prod server
 production:
   <<: *defaults
-  database: mongo_granny
+  database: ruby_mongo_granny
   username: <%= ENV['MONGO_USERNAME'] %>
   password: <%= ENV['MONGO_PASSWORD'] %>

@@ -1,7 +1,21 @@
 Localhost Installation Instructions:
 
-Install RVM
+1. Install RVM<br/>
 	<code>\curl -L https://get.rvm.io | bash -s stable</code>
 
-Install Ruby
-	<code>rvm use 1.9.3 --install --default</code>
+2. Install Ruby<br/>
+	<code>bash --login
+	rvm use 1.9.3 --install --default</code>
+
+3. Install Rails<br/>
+	<code>gem install rails -v 3.2.13</code>
+
+4. 'cd' to app directory
+
+5. Install required gems<br/>
+	<code>bundle install</code>
+
+6. Run rails server<br/>
+	<code>rails s</code>
+
+7. Enter "localhost:3000" in a browser address bar
